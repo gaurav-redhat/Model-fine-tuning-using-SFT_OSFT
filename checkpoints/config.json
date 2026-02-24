@@ -1,0 +1,32 @@
+{
+  "model_name": "bert-base-uncased",
+  "num_labels": 2,
+  "target_modules": [
+    "query",
+    "value"
+  ],
+  "rank": 8,
+  "alpha": 16.0,
+  "lora_dropout": 0.05,
+  "adaptive": false,
+  "gate_init": 5.0,
+  "dataset_name": "imdb",
+  "text_column": "text",
+  "label_column": "label",
+  "max_length": 256,
+  "epochs": 1,
+  "batch_size": 4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "max_grad_norm": 1.0,
+  "label_smoothing": 0.0,
+  "gate_lambda": 0.0001,
+  "prune_threshold": 0.1,
+  "prune_at_epoch": 2,
+  "output_dir": "checkpoints",
+  "seed": 42,
+  "fp16": true,
+  "num_workers": 2,
+  "log_every": 50
+}
