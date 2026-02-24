@@ -1,0 +1,6 @@
+torch>=2.0
+transformers>=4.36
+datasets>=2.16
+safetensors>=0.4
+pandas>=2.0
+numpy>=1.24
